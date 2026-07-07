@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" href="/favicon.svg">
+<meta name="theme-color" content="#04050A">
+<title>KI für Steuerberater — DATEV-Anbindung, Belegklassifikation, Mandanten-Onboarding | von Bülow Consulting</title>
+<meta name="description" content="KI-Workflows für Steuerberater und Kanzleien. DATEV- und Lexware-Anbindung, OCR-Belegklassifikation, Mandanten-Onboarding automatisiert. DSGVO-konform mit Azure OpenAI Frankfurt oder lokalen Modellen. Berufsrechtskonform aufgesetzt.">
+<meta name="keywords" content="KI Steuerberater, DATEV Automatisierung, Kanzlei Digitalisierung, Belegerkennung OCR Steuerkanzlei, Mandanten Onboarding Steuerkanzlei, DSGVO KI Steuerberatung, BStBK">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="author" content="Kai von Bülow">
+<link rel="canonical" href="https://vonbuelow-consulting.de/branchen/steuerberatung/">
+<link rel="alternate" hreflang="de" href="https://vonbuelow-consulting.de/branchen/steuerberatung/">
+<link rel="alternate" hreflang="x-default" href="https://vonbuelow-consulting.de/branchen/steuerberatung/">
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="de_DE">
+<meta property="og:title" content="KI für Steuerberater — DATEV-Anbindung & Belegklassifikation">
+<meta property="og:description" content="Automatisierte Belegerkennung, Vorkontierung, Mandanten-Onboarding. DSGVO-konform mit Azure OpenAI Frankfurt.">
+<meta property="og:url" content="https://vonbuelow-consulting.de/branchen/steuerberatung/">
+<meta property="og:site_name" content="von Bülow Consulting">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="KI für Steuerberater — VBC">
+<meta name="twitter:description" content="DATEV-Anbindung, Belegklassifikation, Mandanten-Onboarding. Berufsrechtskonform.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://vonbuelow-consulting.de/branchen/steuerberatung/#service",
+      "name": "KI-Automatisierung für Steuerberater und Kanzleien",
+      "serviceType": "KI-Workflows für Steuerberatung",
+      "provider": {
+        "@type": "ProfessionalService",
+        "name": "von Bülow Consulting",
+        "url": "https://vonbuelow-consulting.de/",
+        "telephone": "+49-155-63073305",
+        "email": "info@vonbuelow-consulting.de",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Grünstraße 6",
+          "addressLocality": "Königs Wusterhausen",
+          "postalCode": "15711",
+          "addressRegion": "Brandenburg",
+          "addressCountry": "DE"
+        }
+      },
+      "areaServed": [{"@type": "Country", "name": "Deutschland"}, {"@type": "Country", "name": "Österreich"}],
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Steuerberater und Kanzleien"
+      },
+      "description": "KI-Workflows für Steuerberater: DATEV- und Lexware-Anbindung, OCR-Belegklassifikation, automatisiertes Mandanten-Onboarding, Mandantenkommunikation mit Antwort-Vorschlägen. DSGVO-konform mit Azure OpenAI Frankfurt oder lokalen Llama-Modellen. Berufsrechtlich abgestimmt.",
+      "offers": {
+        "@type": "Offer",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "description": "Festpreis-Projekt oder Retainer-Partnerschaft. Kein Tagessatz, keine offene Stundenrechnung."
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Ist KI in einer Steuerkanzlei berufsrechtlich überhaupt zulässig?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Ja, mit klaren Bedingungen. Die Berufsordnung verlangt Verschwiegenheit (§ 57 StBerG) und sachgerechte Auftragsbearbeitung. KI darf eingesetzt werden, solange die Verschwiegenheit gewahrt bleibt und die letzte Entscheidung beim Steuerberater verbleibt. Wir setzen Modelle wahlweise lokal (Llama) oder über Azure OpenAI Frankfurt mit Auftragsverarbeitungsvertrag ein, sodass keine Mandantendaten in US-Clouds gelangen."}
+        },
+        {
+          "@type": "Question",
+          "name": "Welche DATEV-Schnittstellen nutzt ihr?",
+          "acceptedAnswer": {"@type": "Answer", "text": "DATEV Anwendungen über die offizielle DATEV-API, DATEV Unternehmen online für Belege, ASCII-Import für Buchungssätze. Wir vermeiden Workarounds und nutzen vorhandene Schnittstellen die DATEV unterstützt. Lexware-Buchhalter, Lexware Office und Lexoffice gehen analog über deren API."}
+        },
+        {
+          "@type": "Question",
+          "name": "Wie sicher ist die KI-Belegerkennung bei sensiblen Mandantendaten?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Daten verlassen den deutschen oder europäischen Datenraum nicht. Belege werden lokal oder in EU-Cloud verarbeitet. AVV mit allen Drittanbietern. Verschwiegenheitsverpflichtungen werden eingehalten. Auf Wunsch: komplette On-Premise-Variante mit lokalen Modellen (höherer Aufwand, dafür kein Cloud-Datenraum)."}
+        },
+        {
+          "@type": "Question",
+          "name": "Wie lange dauert die Einführung in einer mittleren Kanzlei?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Erster produktiver Workflow (z.B. Belegklassifikation für 1-2 Mandanten als Pilot) typischerweise in 2-3 Wochen. Skalierung auf den gesamten Mandantenstamm und weitere Workflows (Mandantenkommunikation, Onboarding) folgt in 4-12 Wochen je nach Komplexität."}
+        },
+        {
+          "@type": "Question",
+          "name": "Was wenn ein Mitarbeiter die Kanzlei verlässt? Bleiben die Workflows nutzbar?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Ja, das ist explizit so gebaut. Workflows sind dokumentiert, in n8n oder Power Automate orchestriert, kein eigener Code der nicht lesbar wäre. Bei Mitarbeiter-Wechsel kann ein neuer Kollege oder ein DATEV-naher IT-Partner die Workflows weiterführen. Optionaler Sparring-Vertrag für regelmäßige Anpassungen."}
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://vonbuelow-consulting.de/"},
+        {"@type": "ListItem", "position": 2, "name": "Branchen", "item": "https://vonbuelow-consulting.de/branchen/"},
+        {"@type": "ListItem", "position": 3, "name": "Steuerberatung", "item": "https://vonbuelow-consulting.de/branchen/steuerberatung/"}
+      ]
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.bunny.net">
+<link href="https://fonts.bunny.net/css?family=cormorant-garamond:300,400,500,600,700|inter:300,400,500,600,700|jetbrains-mono:400,500" rel="stylesheet">
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'Inter',sans-serif;background:#04050A;color:#E5E7EB;line-height:1.6;overflow-x:hidden;font-feature-settings:'ss01','cv11'}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;background:rgba(4,5,10,0.85);backdrop-filter:blur(20px);border-bottom:1px solid rgba(201,169,97,0.08)}
+.brand{display:flex;align-items:baseline;gap:10px;font-family:'Cormorant Garamond',serif;color:#fff;text-decoration:none}
+.brand .mark{font-size:22px;font-weight:600;color:#C9A961}
+.brand .name{font-size:18px;letter-spacing:1px;font-weight:400}
+.nav-links{display:flex;gap:36px;font-size:13.5px;letter-spacing:0.5px}
+.nav-links a{color:#9CA3AF;text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:#C9A961}
+.nav-cta{padding:10px 22px;background:linear-gradient(135deg,#C9A961,#B89544);color:#04050A;border-radius:2px;font-size:12.5px;font-weight:600;letter-spacing:1px;text-decoration:none;text-transform:uppercase;transition:transform .2s}
+.nav-cta:hover{transform:translateY(-1px)}
+.page{padding:140px 6% 80px;max-width:1280px;margin:0 auto}
+.crumb{font-size:12px;color:#6B7280;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px}
+.crumb a{color:#9CA3AF;text-decoration:none}
+.crumb a:hover{color:#C9A961}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:64px;font-weight:300;line-height:1.05;color:#fff;letter-spacing:-1px;margin-bottom:24px;max-width:1000px}
+.hero h1 .accent{font-style:italic;color:#C9A961}
+.hero .lede{font-size:21px;line-height:1.55;color:#D1D5DB;max-width:780px;margin-bottom:40px;font-weight:300}
+.hero-cta{display:inline-flex;gap:16px;align-items:center;margin-bottom:60px;flex-wrap:wrap}
+.btn-primary{padding:16px 32px;background:linear-gradient(135deg,#C9A961,#B89544);color:#04050A;border:none;border-radius:2px;font-size:14px;font-weight:600;letter-spacing:1.5px;text-decoration:none;text-transform:uppercase;cursor:pointer;transition:transform .2s}
+.btn-primary:hover{transform:translateY(-2px)}
+.btn-ghost{padding:16px 32px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.15);border-radius:2px;font-size:14px;font-weight:500;letter-spacing:1.5px;text-decoration:none;text-transform:uppercase;transition:border-color .2s}
+.btn-ghost:hover{border-color:#C9A961}
+.kpi-row{display:flex;gap:50px;flex-wrap:wrap;margin-top:30px;padding-top:30px;border-top:1px solid rgba(255,255,255,0.06)}
+.kpi{display:flex;flex-direction:column;gap:6px}
+.kpi-val{font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:400;color:#C9A961;line-height:1}
+.kpi-lab{font-size:11.5px;letter-spacing:1.2px;text-transform:uppercase;color:#9CA3AF}
+section{padding:90px 0;border-top:1px solid rgba(255,255,255,0.05)}
+.sec-label{font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:#C9A961;margin-bottom:18px}
+.sec-h{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:300;line-height:1.1;color:#fff;letter-spacing:-0.5px;margin-bottom:24px;max-width:900px}
+.sec-h .accent{font-style:italic;color:#C9A961}
+.sec-sub{font-size:18px;line-height:1.7;color:#D1D5DB;max-width:780px;margin-bottom:60px;font-weight:300}
+.pain-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:30px}
+.pain{padding:32px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);border-radius:2px}
+.pain-num{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;color:#C9A961;margin-bottom:12px}
+.pain h3{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:#fff;margin-bottom:12px}
+.pain p{font-size:15px;color:#9CA3AF;line-height:1.7}
+.workflow-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.wf-card{padding:32px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:2px}
+.wf-card .wf-num{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;color:#C9A961;margin-bottom:12px}
+.wf-card h3{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:#fff;margin-bottom:14px;line-height:1.2}
+.wf-card p{font-size:14.5px;color:#9CA3AF;line-height:1.7;margin-bottom:14px}
+.wf-card ul{list-style:none;padding:0}
+.wf-card ul li{font-size:13px;color:#D1D5DB;padding:6px 0;border-top:1px dashed rgba(255,255,255,0.06);display:flex;gap:8px}
+.wf-card ul li:before{content:'→';color:#C9A961;flex-shrink:0}
+.compliance-box{padding:40px;background:rgba(59,91,255,0.04);border:1px solid rgba(59,91,255,0.15);border-radius:4px;margin-top:40px}
+.compliance-box h3{font-family:'Cormorant Garamond',serif;font-size:24px;color:#fff;font-weight:500;margin-bottom:14px;display:flex;align-items:center;gap:12px}
+.compliance-box h3:before{content:'🛡';font-size:22px;color:#3B5BFF}
+.compliance-box p{font-size:15px;color:#D1D5DB;line-height:1.7;margin-bottom:12px}
+.compliance-box p:last-child{margin-bottom:0}
+.compliance-box b{color:#fff;font-weight:500}
+.stack-list{display:flex;flex-wrap:wrap;gap:10px}
+.stack-pill{padding:8px 16px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:2px;font-family:'JetBrains Mono',monospace;font-size:12.5px;color:#D1D5DB}
+.stack-pill.gold{border-color:rgba(201,169,97,0.4);color:#C9A961}
+.faq{border-top:1px solid rgba(255,255,255,0.06)}
+.faq-item{border-bottom:1px solid rgba(255,255,255,0.06);padding:24px 0}
+.faq-q{font-family:'Cormorant Garamond',serif;font-size:22px;color:#fff;font-weight:500;margin-bottom:12px;display:flex;align-items:baseline;gap:12px}
+.faq-q .q-num{font-family:'JetBrains Mono',monospace;font-size:11px;color:#C9A961;letter-spacing:1px}
+.faq-a{font-size:15.5px;color:#9CA3AF;line-height:1.8;padding-left:36px}
+.faq-a b{color:#D1D5DB;font-weight:500}
+.cta-final{padding:80px 60px;background:linear-gradient(135deg,rgba(201,169,97,0.05),rgba(59,91,255,0.03));border:1px solid rgba(201,169,97,0.15);border-radius:4px;text-align:center;margin:60px 0}
+.cta-final h2{font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:300;color:#fff;line-height:1.15;margin-bottom:20px}
+.cta-final h2 .accent{font-style:italic;color:#C9A961}
+.cta-final p{font-size:17px;color:#D1D5DB;max-width:680px;margin:0 auto 32px;line-height:1.6}
+footer{padding:50px 6%;background:#020308;border-top:1px solid rgba(255,255,255,0.04);text-align:center}
+footer .f-row{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;max-width:1280px;margin:0 auto}
+footer p{font-size:12.5px;color:#6B7280}
+footer a{color:#9CA3AF;text-decoration:none;margin:0 12px;font-size:12.5px}
+footer a:hover{color:#C9A961}
+@media (max-width:1100px){
+  .hero h1{font-size:48px}
+  .sec-h{font-size:38px}
+  .pain-grid{grid-template-columns:1fr;gap:30px}
+  .workflow-grid{grid-template-columns:1fr 1fr}
+  .nav-links{display:none}
+}
+@media (max-width:768px){
+  .page{padding:110px 5% 60px}
+  .hero h1{font-size:34px}
+  .hero .lede{font-size:17px}
+  .sec-h{font-size:30px}
+  .workflow-grid{grid-template-columns:1fr}
+  .kpi-row{gap:24px}
+  .kpi-val{font-size:32px}
+  .faq-q{font-size:18px}
+  .faq-a{padding-left:0;font-size:14.5px}
+  .cta-final{padding:48px 24px}
+  .cta-final h2{font-size:30px}
+  .compliance-box{padding:24px}
+  section{padding:60px 0}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="/" class="brand">
+    <span class="mark">✦</span>
+    <span class="name">von Bülow Consulting</span>
+  </a>
+  <div class="nav-links">
+    <a href="/#methode">Methode</a>
+    <a href="/cases/">Cases</a>
+    <a href="/#faq">FAQ</a>
+  </div>
+  <a href="https://calendly.com/vonbuelow-consulting/30min?utm_source=vonbuelow_website&utm_medium=lp_steuer_nav&utm_campaign=vbc_2026" target="_blank" class="nav-cta">Erstgespräch</a>
+</nav>
+
+<main class="page">
+
+  <div class="crumb">
+    <a href="/">Start</a> <span>/</span> Branchen <span>/</span> Steuerberatung
+  </div>
+
+  <section class="hero" style="border-top:0;padding-top:30px">
+    <h1>KI-Workflows für <span class="accent">Steuerberater und Kanzleien</span></h1>
+    <p class="lede">DATEV- und Lexware-Anbindung, OCR-Belegklassifikation, Mandanten-Onboarding. Mandantenkommunikation mit kontextueller Antwort-Generierung. DSGVO-konform mit Azure OpenAI Frankfurt oder lokalen Modellen. Berufsrechtlich sauber aufgesetzt.</p>
+    <div class="hero-cta">
+      <a href="https://calendly.com/vonbuelow-consulting/30min?utm_source=vonbuelow_website&utm_medium=lp_steuer_hero&utm_campaign=vbc_2026&a1=KI%20f%C3%BCr%20Steuerkanzlei" target="_blank" class="btn-primary">30-Min-Erstgespräch</a>
+      <a href="/#methode" class="btn-ghost">Methode ansehen</a>
+    </div>
+    <div class="kpi-row">
+      <div class="kpi"><span class="kpi-val">&lt;2s</span><span class="kpi-lab">Beleg-Klassifikation</span></div>
+      <div class="kpi"><span class="kpi-val">0</span><span class="kpi-lab">Daten in US-Clouds</span></div>
+      <div class="kpi"><span class="kpi-val">DATEV</span><span class="kpi-lab">+ Lexware nativ</span></div>
+      <div class="kpi"><span class="kpi-val">EU</span><span class="kpi-lab">Datenresidenz</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-label">Engpässe in der Kanzlei</div>
+    <h2 class="sec-h">Wo Steuerberater <span class="accent">heute Zeit verlieren</span></h2>
+    <p class="sec-sub">Aus Erstgesprächen mit Mittelstands-Kanzleien zwischen 5 und 50 Mitarbeitern: vier wiederkehrende Engpässe die mit KI sauber adressierbar sind.</p>
+    <div class="pain-grid">
+      <div class="pain">
+        <div class="pain-num">01</div>
+        <h3>Belegklassifikation kostet Berufsträger-Zeit</h3>
+        <p>Eingangsrechnung, Ausgangsrechnung, Kassenbeleg, Reisekosten, Sonstiges. Diese Sortierung machen oft Mandanten-Buchhalter oder Berufsträger manuell. Ein Klassifizierer könnte das in Sekunden, mit nachvollziehbarer Vorkontierung.</p>
+      </div>
+      <div class="pain">
+        <div class="pain-num">02</div>
+        <h3>Mandanten-Onboarding ist Excel-Wahnsinn</h3>
+        <p>Bei jedem neuen Mandanten: Stammdaten erfassen, Verträge anlegen, DATEV-Mandant anlegen, Belegquellen einrichten, Zugänge erstellen. Ein durchschnittlicher Onboarding-Prozess bindet 4-8 Stunden Berater-Kapazität.</p>
+      </div>
+      <div class="pain">
+        <div class="pain-num">03</div>
+        <h3>Mandantenkommunikation frisst Vormittage</h3>
+        <p>Mandanten-Mails zu wiederkehrenden Themen (Fristen, Belege fehlen, Rückfragen zu Bescheiden) werden manuell beantwortet. Ein Klassifizierer könnte Standard-Anfragen vorbereiten lassen, der Berater muss nur prüfen und freigeben.</p>
+      </div>
+      <div class="pain">
+        <div class="pain-num">04</div>
+        <h3>Sensible Daten und KI passen scheinbar nicht zusammen</h3>
+        <p>Verständliche Sorge: Mandantendaten dürfen nicht in US-Clouds. Lösung gibt es: Azure OpenAI Frankfurt mit AVV oder lokale Llama-Modelle. Verschwiegenheit nach § 57 StBerG bleibt gewahrt.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-label">Konkrete Workflows</div>
+    <h2 class="sec-h">Drei Workflows die <span class="accent">sofort Wirkung zeigen</span></h2>
+    <p class="sec-sub">Aufstellung der Workflows die wir in den meisten Steuerkanzleien zuerst bauen. Pilot-Mandant zuerst, dann Skalierung auf den gesamten Mandantenstamm.</p>
+    <div class="workflow-grid">
+      <div class="wf-card">
+        <div class="wf-num">Workflow 01</div>
+        <h3>OCR-Belegklassifikation mit DATEV-Vorkontierung</h3>
+        <p>Belege landen via E-Mail, DATEV Unternehmen online oder Scan-Inbox im System. KI klassifiziert sie und schlägt Konten-Mapping vor.</p>
+        <ul>
+          <li>Beleg-Typ erkannt (Eingangsrechnung, Reisekosten, etc.)</li>
+          <li>Vorschlag SKR03 oder SKR04 Konto</li>
+          <li>USt-Erkennung und Validierung</li>
+          <li>Mandant prüft, Berater gibt frei</li>
+          <li>Buchungssatz nach DATEV</li>
+        </ul>
+      </div>
+      <div class="wf-card">
+        <div class="wf-num">Workflow 02</div>
+        <h3>Mandanten-Onboarding strukturiert</h3>
+        <p>Neuer Mandant wird via Formular oder Telefon angelegt. Workflow erfasst Daten und richtet alle Systeme parallel ein.</p>
+        <ul>
+          <li>Stammdaten via Formular oder Sprach-Erfassung</li>
+          <li>Handelsregister-Abgleich automatisch</li>
+          <li>DATEV-Mandant wird automatisch angelegt</li>
+          <li>Vertragsentwurf wird vorbereitet</li>
+          <li>Belegquellen werden konfiguriert</li>
+        </ul>
+      </div>
+      <div class="wf-card">
+        <div class="wf-num">Workflow 03</div>
+        <h3>Mandanten-Mailbox mit Antwort-Vorschlägen</h3>
+        <p>Eingehende Mandanten-Mails werden klassifiziert. Bei Standard-Anfragen wird eine Antwort vorbereitet.</p>
+        <ul>
+          <li>Klassifikation in unter 2 Sekunden</li>
+          <li>Antwort-Vorschlag mit Mandanten-Kontext</li>
+          <li>Berater prüft und gibt frei</li>
+          <li>Kein Auto-Versand ohne Freigabe</li>
+          <li>Alles in der Kanzlei-DMS dokumentiert</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="compliance-box">
+      <h3>Berufsrecht und DSGVO</h3>
+      <p><b>Verschwiegenheit nach § 57 StBerG</b> bleibt gewahrt. Mandantendaten verlassen den deutschen oder europäischen Datenraum nicht. Wir nutzen ausschließlich: Azure OpenAI Frankfurt mit AVV, lokale Llama-Modelle bei On-Premise-Wunsch, DATEV-eigene Schnittstellen.</p>
+      <p><b>Letzte Entscheidung beim Berater.</b> KI schlägt vor und klassifiziert, aber gibt nichts ohne menschliche Freigabe nach außen frei. Das deckt sowohl berufsrechtliche als auch haftungsrechtliche Anforderungen ab.</p>
+      <p><b>Auditierbar.</b> Jede KI-Aktion wird protokolliert. Bei Mandanten-Anfragen, Steuerprüfungen oder internen Audits ist nachvollziehbar wer was wann mit welchen Daten gemacht hat.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-label">Stack</div>
+    <h2 class="sec-h">Komponenten die wir in Kanzleien <span class="accent">routinemäßig einsetzen</span></h2>
+    <p class="sec-sub">Bestehende Systeme bleiben Leitplatte. Wir ergänzen und verbinden, statt zu ersetzen.</p>
+    <div class="stack-list">
+      <span class="stack-pill gold">DATEV API</span>
+      <span class="stack-pill gold">Lexware</span>
+      <span class="stack-pill gold">Azure OpenAI Frankfurt</span>
+      <span class="stack-pill">Llama (lokal)</span>
+      <span class="stack-pill">n8n</span>
+      <span class="stack-pill">DATEV Unternehmen online</span>
+      <span class="stack-pill">SharePoint</span>
+      <span class="stack-pill">Microsoft 365</span>
+      <span class="stack-pill">Outlook</span>
+      <span class="stack-pill">Whisper</span>
+      <span class="stack-pill">Tesseract OCR</span>
+      <span class="stack-pill">Doc-AI</span>
+      <span class="stack-pill">Power Automate</span>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="sec-label">FAQ</div>
+    <h2 class="sec-h">Fragen die Kanzlei-Inhaber <span class="accent">vor einem Projekt</span> stellen</h2>
+    <div class="faq" style="margin-top:40px">
+      <div class="faq-item">
+        <div class="faq-q"><span class="q-num">Q1</span>Ist KI in einer Steuerkanzlei berufsrechtlich überhaupt zulässig?</div>
+        <div class="faq-a">Ja, mit klaren Bedingungen. Die <b>Berufsordnung</b> verlangt Verschwiegenheit (§ 57 StBerG) und sachgerechte Auftragsbearbeitung. KI darf eingesetzt werden, solange die Verschwiegenheit gewahrt bleibt und die letzte Entscheidung beim Steuerberater verbleibt. Wir setzen Modelle wahlweise lokal (Llama) oder über Azure OpenAI Frankfurt mit AVV ein, sodass keine Mandantendaten in US-Clouds gelangen.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="q-num">Q2</span>Welche DATEV-Schnittstellen nutzt ihr?</div>
+        <div class="faq-a">DATEV Anwendungen über die <b>offizielle DATEV-API</b>, DATEV Unternehmen online für Belege, ASCII-Import für Buchungssätze. Wir vermeiden Workarounds und nutzen vorhandene Schnittstellen die DATEV unterstützt. Lexware-Buchhalter, Lexware Office und Lexoffice gehen analog über deren API.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="q-num">Q3</span>Wie sicher ist die KI-Belegerkennung bei sensiblen Mandantendaten?</div>
+        <div class="faq-a">Daten verlassen den deutschen oder europäischen Datenraum nicht. Belege werden lokal oder in EU-Cloud verarbeitet. <b>AVV mit allen Drittanbietern.</b> Verschwiegenheitsverpflichtungen werden eingehalten. Auf Wunsch: komplette On-Premise-Variante mit lokalen Modellen (höherer Aufwand, dafür kein Cloud-Datenraum).</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="q-num">Q4</span>Wie lange dauert die Einführung in einer mittleren Kanzlei?</div>
+        <div class="faq-a">Erster produktiver Workflow (z.B. Belegklassifikation für 1-2 Mandanten als Pilot) typischerweise in <b>2-3 Wochen</b>. Skalierung auf den gesamten Mandantenstamm und weitere Workflows (Mandantenkommunikation, Onboarding) folgt in 4-12 Wochen je nach Komplexität.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="q-num">Q5</span>Was wenn ein Mitarbeiter die Kanzlei verlässt? Bleiben die Workflows nutzbar?</div>
+        <div class="faq-a">Ja, das ist explizit so gebaut. Workflows sind <b>dokumentiert</b>, in n8n oder Power Automate orchestriert, kein eigener Code der nicht lesbar wäre. Bei Mitarbeiter-Wechsel kann ein neuer Kollege oder ein DATEV-naher IT-Partner die Workflows weiterführen. Optionaler Sparring-Vertrag für regelmäßige Anpassungen.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="q-num">Q6</span>Habt ihr eine Kanzlei-Referenz die ich sprechen kann?</div>
+        <div class="faq-a">Steuerberatung ist unser jüngster Schwerpunkt-Cluster. Wenn Sie eine konkrete Referenz wünschen, fragen Sie uns im Erstgespräch. Wir vermitteln gerne ein Gespräch mit einem Kanzlei-Inhaber aus unserem Netzwerk.</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-final">
+    <h2>Eine Kanzlei skaliert nicht durch mehr Personal. <span class="accent">Sie skaliert durch saubere Workflows.</span></h2>
+    <p>30-Minuten-Erstgespräch, kostenfrei. Wir hören uns Ihre konkreten Engpässe an (Belegklassifikation, Onboarding, Mandantenkommunikation) und sagen direkt ob und wo KI sich für Ihre Kanzlei lohnt.</p>
+    <a href="https://calendly.com/vonbuelow-consulting/30min?utm_source=vonbuelow_website&utm_medium=lp_steuer_final&utm_campaign=vbc_2026&a1=KI%20f%C3%BCr%20Steuerkanzlei" target="_blank" class="btn-primary">Erstgespräch buchen</a>
+  </div>
+
+</main>
+
+<footer>
+  <div class="f-row">
+    <p>© 2026 von Bülow Consulting · Königs Wusterhausen</p>
+    <div>
+      <a href="/">Start</a>
+      <a href="/cases/">Cases</a>
+      <a href="/#kontakt">Kontakt</a>
+      <a href="/impressum/">Impressum</a>
+      <a href="/datenschutz/">Datenschutz</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Cookie/Privacy Banner -->
+<style>
+.cb-banner{position:fixed;bottom:20px;left:20px;right:20px;max-width:680px;margin:0 auto;background:rgba(4,5,10,0.97);backdrop-filter:blur(20px);border:1px solid rgba(201,169,97,0.25);border-radius:8px;padding:20px 24px;z-index:9999;display:none;box-shadow:0 20px 60px rgba(0,0,0,0.6);font-family:Inter,sans-serif}
+.cb-banner.active{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.cb-text{flex:1;min-width:260px;font-size:13.5px;color:#D1D5DB;line-height:1.6}
+.cb-text a{color:#C9A961;text-decoration:underline;text-underline-offset:2px}
+.cb-btn{padding:10px 22px;background:#C9A961;color:#04050A;border:none;border-radius:4px;font-size:12.5px;font-weight:600;letter-spacing:0.5px;cursor:pointer;text-transform:uppercase}
+.cb-btn:hover{background:#B89544}
+@media(max-width:540px){.cb-banner{left:12px;right:12px;bottom:12px;padding:16px}.cb-text{font-size:12.5px}.cb-btn{width:100%}}
+</style>
+<div id="cbBanner" class="cb-banner" role="dialog" aria-label="Hinweis zur Datenverarbeitung">
+<div class="cb-text">Diese Website nutzt nur technisch notwendige Speicherung im Browser. Kein Tracking, keine Analytics, keine Marketing-Cookies. Externe Dienste (z.B. Calendly) werden erst nach Klick aufgerufen. Mehr: <a href="/datenschutz/">Datenschutz</a> &middot; <a href="/impressum/">Impressum</a></div>
+<button class="cb-btn" onclick="document.getElementById(&apos;cbBanner&apos;).classList.remove(&apos;active&apos;);try{localStorage.setItem(&apos;vbc_cb&apos;,&apos;1&apos;)}catch(e){}">Verstanden</button>
+</div>
+<script>try{if(!localStorage.getItem("vbc_cb"))document.getElementById("cbBanner").classList.add("active")}catch(e){document.getElementById("cbBanner").classList.add("active")}</script>
+
+</body>
+</html>
